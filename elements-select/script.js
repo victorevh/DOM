@@ -32,3 +32,40 @@
 // console.log(elements)
 
 // elements.forEach(el => console.log(el))
+
+
+//======================================================================================================================
+// Manipulando Conteúdo
+// textContent
+
+const element = document.querySelector('h1')
+
+// element.textContent += " sobre o DOM"
+// console.log(element.textContent)
+
+// Trocando texto
+// innerText
+// element.innerText = "Olá Pessoas!"
+
+// trocando HTML interno
+// innerHTML
+
+element.innerHTML = "Oi pessoal! <small> oi pessoal! </small>"
+
+// Value input
+
+const elementvalue = document.querySelector('input')
+
+console.log(elementvalue.value)
+elementvalue.value="outro valor"
+
+// atributos
+
+const header = document.querySelector('header')
+header.setAttribute('id', 'header')
+
+console.log(headerID.getAttribute('class'))
+
+header.removeAttribute('id')
+header.removeAttribute('bg')
+header.setAttribute('class', 'bg header')
