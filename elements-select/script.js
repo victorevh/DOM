@@ -38,7 +38,7 @@
 // Manipulando Conteúdo
 // textContent
 
-const element = document.querySelector('h1')
+// const element = document.querySelector('h1')
 
 // element.textContent += " sobre o DOM"
 // console.log(element.textContent)
@@ -50,22 +50,37 @@ const element = document.querySelector('h1')
 // trocando HTML interno
 // innerHTML
 
-element.innerHTML = "Oi pessoal! <small> oi pessoal! </small>"
+// element.innerHTML = "Oi pessoal! <small> oi pessoal! </small>"
 
 // Value input
 
-const elementvalue = document.querySelector('input')
+// const elementvalue = document.querySelector('input')
 
-console.log(elementvalue.value)
-elementvalue.value="outro valor"
+// console.log(elementvalue.value)
+// elementvalue.value="outro valor"
 
 // atributos
 
-const header = document.querySelector('header')
-header.setAttribute('id', 'header')
+// const header = document.querySelector('header')
+// header.setAttribute('id', 'header')
 
-console.log(headerID.getAttribute('class'))
+// console.log(headerID.getAttribute('class'))
 
-header.removeAttribute('id')
-header.removeAttribute('bg')
-header.setAttribute('class', 'bg header')
+// header.removeAttribute('id')
+// header.removeAttribute('bg')
+// header.setAttribute('class', 'bg header')
+
+// ======================================================================
+// Alterando estilos
+const element = document.querySelector('body')
+
+element.style.backgroundColor = "#f9f3d2"
+// console.log(element.style.backgroundColor)
+
+// classList
+
+element.classList.add('active', 'green')
+console.log(element.classList)
+// element.classList.remove('active')
+// o toggle adiciona a classe quando ela não existe, e remove quando ela existe, tipo um interruptor
+// element.classList.toggle('active')
