@@ -72,15 +72,55 @@
 
 // ======================================================================
 // Alterando estilos
-const element = document.querySelector('body')
+//onst element = document.querySelector('body')
 
-element.style.backgroundColor = "#f9f3d2"
+// element.style.backgroundColor = "#f9f3d2"
 // console.log(element.style.backgroundColor)
 
 // classList
 
-element.classList.add('active', 'green')
-console.log(element.classList)
+//element.classList.add('active', 'green')
+//console.log(element.classList)
 // element.classList.remove('active')
 // o toggle adiciona a classe quando ela não existe, e remove quando ela existe, tipo um interruptor
 // element.classList.toggle('active')
+
+//===========================================================================
+
+// Navegando pelos elementos
+// parentNode parentElement
+// const body = document.querySelector('body')
+
+// console.log(body.parentNode)
+
+// const element = document.querySelector('h1')
+
+// console.log(element.parentElement)
+
+// navegando pelos elementos filhos
+// childNodes children
+
+// const el = document.querySelector('body')
+
+// console.log(el.childNodes)
+// console.log(el.children)
+
+// firstChild firstElementChild
+// console.log(el.firstChild) // leva em consideração o espaçõ vazio
+// console.log(el.firstElementChild)
+
+// lastChild lastElementChild
+// console.log(el.lastChild)
+// console.log(el.lastElementChild)
+
+// Navegando pelos elementos filhos
+
+const el = document.querySelector('header')
+
+// nextSibling nextElementSibling
+console.log(el.nextSibling) // leva em consideração o espaço vazio
+console.log(el.nextElementSibling)
+
+// previousSibling previousElementSibling
+console.log(el.previousSibling)// leva em consideração o espaço vazio
+console.log(el.previousElementSibling)
