@@ -70,7 +70,7 @@
 // header.removeAttribute('bg')
 // header.setAttribute('class', 'bg header')
 
-// ======================================================================
+//======================================================================================================================
 // Alterando estilos
 //onst element = document.querySelector('body')
 
@@ -85,7 +85,7 @@
 // o toggle adiciona a classe quando ela não existe, e remove quando ela existe, tipo um interruptor
 // element.classList.toggle('active')
 
-//===========================================================================
+//======================================================================================================================
 
 // Navegando pelos elementos
 // parentNode parentElement
@@ -115,12 +115,33 @@
 
 // Navegando pelos elementos filhos
 
-const el = document.querySelector('header')
+// const el = document.querySelector('header')
 
 // nextSibling nextElementSibling
-console.log(el.nextSibling) // leva em consideração o espaço vazio
-console.log(el.nextElementSibling)
+// console.log(el.nextSibling) // leva em consideração o espaço vazio
+// console.log(el.nextElementSibling)
 
 // previousSibling previousElementSibling
-console.log(el.previousSibling)// leva em consideração o espaço vazio
-console.log(el.previousElementSibling)
+// console.log(el.previousSibling)// leva em consideração o espaço vazio
+// console.log(el.previousElementSibling)
+
+//======================================================================================================================
+
+// Criando e adicionando elementos 
+
+// createElement
+const div = document.createElement('div')
+div.innerText = "Olá Devs!"
+
+// append prepend
+const body = document.querySelector('body')
+
+body.append(div) // adiciona no fim do html
+body.prepend(div) // adiciona no inicio do html
+
+// insertBefore
+const script = document.querySelector('script')
+body.insertBefore(div, script) //adiciona depois do elemento selecionado.
+
+const header = body.querySelector('header')
+body.insertBefore(div, header.nextElementSibling) //adicionando texto antes do elemento selecionado
