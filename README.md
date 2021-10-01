@@ -3,7 +3,7 @@
 * É o HTML convertido para um Objeto JavaScript
 * API que representa e interage com o HTML
 * Estrutura de dados do tipo árvore, criada pelo bwoser
-* Porpriedades e métodos
+* Propriedades e métodos
 
 # Para que?
 
