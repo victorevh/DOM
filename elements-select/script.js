@@ -72,15 +72,15 @@
 
 //======================================================================================================================
 // Alterando estilos
-//onst element = document.querySelector('body')
+// const element = document.querySelector('body')
 
 // element.style.backgroundColor = "#f9f3d2"
 // console.log(element.style.backgroundColor)
 
 // classList
 
-//element.classList.add('active', 'green')
-//console.log(element.classList)
+// element.classList.add('active', 'green')
+// console.log(element.classList)
 // element.classList.remove('active')
 // o toggle adiciona a classe quando ela não existe, e remove quando ela existe, tipo um interruptor
 // element.classList.toggle('active')
@@ -130,18 +130,54 @@
 // Criando e adicionando elementos 
 
 // createElement
-const div = document.createElement('div')
-div.innerText = "Olá Devs!"
+// const div = document.createElement('div')
+// div.innerText = "Olá Devs!"
 
 // append prepend
-const body = document.querySelector('body')
+// const body = document.querySelector('body')
 
-body.append(div) // adiciona no fim do html
-body.prepend(div) // adiciona no inicio do html
+// body.append(div) // adiciona no fim do html
+// body.prepend(div) // adiciona no inicio do html
 
 // insertBefore
-const script = document.querySelector('script')
-body.insertBefore(div, script) //adiciona depois do elemento selecionado.
+// const script = document.querySelector('script')
+// body.insertBefore(div, script) //adiciona depois do elemento selecionado.
 
-const header = body.querySelector('header')
-body.insertBefore(div, header.nextElementSibling) //adicionando texto antes do elemento selecionado
+// const header = body.querySelector('header')
+// body.insertBefore(div, header.nextElementSibling) //adicionando texto antes do elemento selecionado
+
+//======================================================================================================================
+
+// Eventos
+
+function print() {
+    console.log('print')
+}
+
+// Eventos de teclado
+
+const input = document.querySelector('input')
+
+// input.onkeyup = function() {
+//    console.log('rodei')
+// }
+
+// Ouvidor de eventos
+
+const h1 = document.querySelector('h1')
+
+h1.addEventListener('click', print)
+
+h1.addEventListener('click', function(){
+    console.log('outro momento')
+})
+
+// Argumento event
+
+input.onkeydown = function(event) {
+    console.log(event.key)
+}
+
+input.onkeydown = function(event) {
+    console.log(event.currentTarget.value)
+}
